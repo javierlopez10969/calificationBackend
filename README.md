@@ -90,7 +90,18 @@ En consola :
 serializer = CursoSerializer()
 print(repr(serializer))
 
-### Vistas basadas en apis
+### Funciones basadas en las vistas apis
+
+En el modulo views.py importaremos 
+
+from django.hhtp import HttpResponse, JsonResponse
+from rest_framework.parsers import JSONparser
+from .models import Curso 
+from .serializer import CursoSerializer
+
+Y crearemos una clase que nos permite realizar el CRUD del modelo.
+
+Creamos un nuevo modulo urls.py y las incluiremos en las urls dedl proyecto general.
 
 
 
